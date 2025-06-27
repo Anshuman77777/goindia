@@ -1,15 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
+
 import './App.css'
+import Layout from './components/Layout';
+import GeneralProductsPage from './pages/GeneralProductsPage';
+import LandingPage from './pages/LandingPage'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ViewProduct from './pages/ViewProduct';
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
-    <>
-      <h1 >GoIndia</h1>
-    </>
+    
+    <BrowserRouter>
+    <div className='w-full h-screen bg-white text-black flex flex-col'>
+    <Routes>
+      <Route path="/" element={<LandingPage/>}/>
+      <Route element={<Layout/>}>
+      <Route path='/products' element={<GeneralProductsPage/>}/>
+      <Route path ='/view-product' element={<ViewProduct/>}/>
+      </Route>
+    </Routes>
+    </div>
+    </BrowserRouter>
+      
+    
   )
 }
 

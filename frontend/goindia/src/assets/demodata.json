@@ -1,0 +1,57 @@
+[
+  {
+    "id": "p1",
+    "title": "CampusKart",
+    "hookLine": "Forgot your charger in hostel? CampusKart's already on the way.",
+    "description": "A hyperlocal delivery app for campus essentials built by students of IIT Delhi.",
+    "author": "Rohan Mehta",
+    "college": "IIT Delhi",
+    "isCollegeStartup": true,
+    "upvotes": 132,
+    "link": "https://campuskart.app"
+  },
+  {
+    "id": "p2",
+    "title": "BudgetPal",
+    "hookLine": "Track every chai, maggi, and metro ride — automatically.",
+    "description": "An expense tracking app designed for Indian college students on a tight budget.",
+    "author": "Sneha Iyer",
+    "college": "BITS Pilani",
+    "isCollegeStartup": true,
+    "upvotes": 87,
+    "link": "https://budgetpal.io"
+  },
+  {
+    "id": "p3",
+    "title": "StudySync AI",
+    "hookLine": "Convert your syllabus into smart summaries — instantly.",
+    "description": "AI-based summarizer for textbooks, built by two indie hackers.",
+    "author": "Ankit Sharma",
+    "college": "—",
+    "isCollegeStartup": false,
+    "upvotes": 212,
+    "link": "https://studysync.ai"
+  },
+  {
+    "id": "p4",
+    "title": "BookMates",
+    "hookLine": "Why buy books when you can borrow them across your campus?",
+    "description": "A P2P book rental marketplace used across 30+ Indian campuses.",
+    "author": "Ananya Joshi",
+    "college": "Delhi University",
+    "isCollegeStartup": true,
+    "upvotes": 154,
+    "link": "https://bookmates.in"
+  },
+  {
+    "id": "p5",
+    "title": "GigGrow",
+    "hookLine": "Turn your skills into side income while you’re still in college.",
+    "description": "Platform helping students find freelance gigs relevant to their skills.",
+    "author": "Sahil Verma",
+    "college": "IIM Bangalore",
+    "isCollegeStartup": true,
+    "upvotes": 190,
+    "link": "https://giggrow.in"
+  }
+]

@@ -8,7 +8,10 @@
     "college": "IIT Delhi",
     "isCollegeStartup": true,
     "upvotes": 132,
-    "link": "https://campuskart.app"
+    "link": "https://campuskart.app",
+    "logo": "",
+    "images":[],
+    "youtubelink":""
   },
   {
     "id": "p2",

@@ -6,6 +6,7 @@ import GeneralProductsPage from './pages/GeneralProductsPage';
 import LandingPage from './pages/LandingPage'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ViewProduct from './pages/ViewProduct';
+import Demo from './Demo';
 
 function App() {
   
@@ -19,6 +20,7 @@ function App() {
       <Route element={<Layout/>}>
       <Route path='/products' element={<GeneralProductsPage/>}/>
       <Route path ='/view-product' element={<ViewProduct/>}/>
+      <Route path='/demo' element={<Demo/>}/>
       </Route>
     </Routes>
     </div>

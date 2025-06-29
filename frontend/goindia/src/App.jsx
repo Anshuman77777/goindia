@@ -39,6 +39,7 @@ const UserContext =createContext(null);
       <Route element={<Layout/>}>
       <Route path='/products' element={<GeneralProductsPage/>}/>
       <Route path ='/view-product' element={<ViewProduct/>}/>
+      <Route path='/demo' element={<Demo/>}/>
       </Route>
     </Routes>
     </div>

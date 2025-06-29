@@ -6,12 +6,32 @@ import GeneralProductsPage from './pages/GeneralProductsPage';
 import LandingPage from './pages/LandingPage'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ViewProduct from './pages/ViewProduct';
-
-function App() {
-  
+import { useState,useEffect ,createContext } from 'react';
+  import supabase from '../../../supabaseClient';
+const UserContext =createContext(null);
+  function App() {
+  const [session, setSession] = useState(null)
+    useEffect(() => {
+      supabase.auth.getSession().then(({ data: { session } }) => {
+        setSession(session)
+      })
+      const {
+        data: { subscription },
+      } = supabase.auth.onAuthStateChange((_event, session) => {
+        setSession(session)
+      })
+      return () => subscription.unsubscribe()
+    }, [])
+    const signUp = async()=>{
+      await supabase.auth.signInWithOAuth({
+        provider:"google",
+      });
+    }
+    
 
   return (
-    
+  <>
+    <UserContext value={{session,setSession}}>
     <BrowserRouter>
     <div className='w-full h-screen bg-white text-black flex flex-col'>
     <Routes>
@@ -23,8 +43,8 @@ function App() {
     </Routes>
     </div>
     </BrowserRouter>
-      
-    
+      </UserContext>
+    </>
   )
 }
 

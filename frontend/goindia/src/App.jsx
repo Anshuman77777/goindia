@@ -7,8 +7,10 @@ import LandingPage from './pages/LandingPage'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ViewProduct from './pages/ViewProduct';
 import { useState,useEffect ,createContext } from 'react';
-  import supabase from '../../../supabaseClient';
-const UserContext =createContext(null);
+import { supabase } from '../supabaseClient';
+
+import PostProduct from './pages/PostProduct';
+export const UserContext =createContext(null);
   function App() {
   const [session, setSession] = useState(null)
     useEffect(() => {
@@ -19,6 +21,7 @@ const UserContext =createContext(null);
         data: { subscription },
       } = supabase.auth.onAuthStateChange((_event, session) => {
         setSession(session)
+        console.log(session);
       })
       return () => subscription.unsubscribe()
     }, [])
@@ -39,7 +42,7 @@ const UserContext =createContext(null);
       <Route element={<Layout/>}>
       <Route path='/products' element={<GeneralProductsPage/>}/>
       <Route path ='/view-product' element={<ViewProduct/>}/>
-      <Route path='/demo' element={<Demo/>}/>
+      <Route path ='/post-product' element={<PostProduct/>}/>
       </Route>
     </Routes>
     </div>

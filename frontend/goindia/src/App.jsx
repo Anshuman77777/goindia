@@ -6,6 +6,8 @@ import GeneralProductsPage from './pages/GeneralProductsPage';
 import LandingPage from './pages/LandingPage'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ViewProduct from './pages/ViewProduct';
+
+import College from './pages/College';
 import { useState,useEffect ,createContext } from 'react';
   import supabase from '../../../supabaseClient';
 const UserContext =createContext(null);
@@ -39,6 +41,7 @@ const UserContext =createContext(null);
       <Route element={<Layout/>}>
       <Route path='/products' element={<GeneralProductsPage/>}/>
       <Route path ='/view-product' element={<ViewProduct/>}/>
+      <Route path='/college' element={<College/>}/>
       <Route path='/demo' element={<Demo/>}/>
       </Route>
     </Routes>

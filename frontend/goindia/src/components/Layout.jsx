@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom';
 function Layout() {
   return (
     <>
-      <Navbar/>
+      <Navbar />
       <Outlet /> {/* Where child routes render */}
     </>
   );

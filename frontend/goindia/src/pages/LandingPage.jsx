@@ -1,11 +1,11 @@
-import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function LandingPage() {
-  const nav=useNavigate();
-  const exploreProducts =()=>{
-    nav('/products')
-  }
+  const nav = useNavigate();
+  const exploreProducts = () => {
+    nav('/products');
+  };
   return (
     <div className="bg-white h-screen text-gray-800 font-sans overflow-y-auto ">
       {/* Hero Section */}
@@ -16,8 +16,9 @@ export default function LandingPage() {
         </p>
         <div className="space-x-4">
           <button
-          onClick={exploreProducts}
-          className="bg-white text-orange-600 font-semibold px-6 py-3 rounded-xl shadow hover:scale-105 transition">
+            onClick={exploreProducts}
+            className="bg-white text-orange-600 font-semibold px-6 py-3 rounded-xl shadow hover:scale-105 transition"
+          >
             Explore Products
           </button>
           <button className="bg-black text-white px-6 py-3 rounded-xl shadow hover:scale-105 transition">

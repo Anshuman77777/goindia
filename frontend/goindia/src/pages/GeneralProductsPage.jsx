@@ -1,13 +1,13 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
-import Feed from '../components/Feed'
+import React from 'react';
+import Navbar from '../components/Navbar';
+import Feed from '../components/Feed';
 
 function GeneralProductsPage() {
   return (
     <>
-    <Feed/>
+      <Feed />
     </>
-  )
+  );
 }
 
-export default GeneralProductsPage
+export default GeneralProductsPage;

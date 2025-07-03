@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const CollegeCard = ({ name, location, image, website, ideas, backImage }) => {
   return (
@@ -17,11 +17,7 @@ const CollegeCard = ({ name, location, image, website, ideas, backImage }) => {
           </div>
         </div>
         <div className="absolute inset-0 bg-gray-900 text-white rounded-xl backface-hidden rotate-y-180">
-          <img
-            src={backImage}
-            alt="Back"
-            className="w-full h-full object-cover rounded-xl"
-          />
+          <img src={backImage} alt="Back" className="w-full h-full object-cover rounded-xl" />
         </div>
       </div>
     </div>

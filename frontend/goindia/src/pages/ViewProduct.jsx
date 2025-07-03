@@ -1,14 +1,9 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { useLocation } from 'react-router-dom'
 import react from '../assets/react.svg'
 import MediaDisplay from '../components/MediaDisplay';
-import { UserContext } from '../App';
 function ViewProduct() {
     const project =useLocation().state;
-     const {session,setSession}=useContext(UserContext);
-    const likeProduct = async ()=>{
-    
-    }
   return (
     <div className="h-full my-2 p-6 bg-white rounded-2xl shadow-lg border border-gray-200 overflow-y-auto">
       <img src={react} className='w-10 h-10'/>
@@ -27,7 +22,7 @@ function ViewProduct() {
         )}
       </div>
 
-      <p className="mt-4 font-semibold text-indigo-600"> <button onClick={likeProduct}>⬆️</button> {project.upvotes} Upvotes</p>
+      <p className="mt-4 font-semibold text-indigo-600">⬆️ {project.upvotes} Upvotes</p>
 
       <a
         href={project.link}

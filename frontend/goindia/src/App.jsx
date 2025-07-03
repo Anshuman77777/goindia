@@ -12,6 +12,7 @@ import { useState,useEffect ,createContext } from 'react';
 import { supabase } from '../supabaseClient';
 
 import PostProduct from './pages/PostProduct';
+import Demo from './Demo';
 export const UserContext =createContext(null);
   function App() {
   const [session, setSession] = useState(null)
@@ -46,6 +47,7 @@ export const UserContext =createContext(null);
       <Route path ='/view-product' element={<ViewProduct/>}/>
       <Route path='/college' element={<College/>}/>
       <Route path ='/post-product' element={<PostProduct/>}/>
+      {/* <Route path='/demo' element={<Demo />}/> */}
       </Route>
     </Routes>
     </div>

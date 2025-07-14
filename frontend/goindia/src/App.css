@@ -1,8 +1,8 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 @plugin "daisyui";
 @theme {
-  --color-india-saffron: #FF9933;
-  --color-india-white: #FFFFFF;
+  --color-india-saffron: #ff9933;
+  --color-india-white: #ffffff;
   --color-india-green: #138808;
   --color-india-navy-blue: #000080; /* Ashoka Chakra */
 }
